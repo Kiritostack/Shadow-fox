@@ -56,3 +56,11 @@
 .project-btn a:active{
     transform:scale(0.9);
 }
+@media (max-width:768px){
+    .Project-box{
+        flex-wrap:wrap;
+    }
+    .project-card{
+        width: 100%;
+    }
+}

@@ -79,3 +79,11 @@
 .Contact-form button:active{
     transform:scale(0.9);
 }
+@media(max-width:768px){
+    .Contact-form{
+        width:100%;
+    }
+    .Contact-form input,.Contact-form textarea{
+        width: 100%;
+    }
+}

@@ -4,10 +4,13 @@
   padding:0px;
   font-family:'Orbitron',sans-serif;
 }
-body{
+html,body{
   background:radial-gradient(circle,#095013,black);
   color:white;
-  overflow-x:hidden;
+  overflow-x: hidden;
+  margin:0;
+  padding:0;
+  overflow-y: auto;
 }
 .Light{
    background:radial-gradient(circle,#178c26,black);
@@ -19,4 +22,20 @@ body{
 }
 html{
   scroll-behavior: smooth;
+}
+@media(max-width:768px) {
+  section{
+    padding: 40px;
+    text-align:center;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size:1.6rem;
+  }
+  .card,.project-card{
+    width:100%;
+    max-width:320px;
+  }
 }

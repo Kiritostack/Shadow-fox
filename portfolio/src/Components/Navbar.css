@@ -5,6 +5,7 @@
     padding:20px 50px;
     position: fixed;
     width:100%;
+    height:auto;
     top: 0;
     background-color: rgba(13, 36, 13, 0.772);
     backdrop-filter:blur(12px);
@@ -71,3 +72,25 @@
   }
 }
 
+@media(max-width:768px){
+    .Navbar{
+        position:static;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+
+    .btn{
+width:auto;
+;
+margin: 10px auto;
+display: block;
+        
+    }
+}

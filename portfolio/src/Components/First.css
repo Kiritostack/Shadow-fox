@@ -1,5 +1,6 @@
 .Container{
-    height:100vh;
+    min-height:100vh;
+    height:auto;
     padding-top:100px;
     display: flex;
     justify-content: center;
@@ -42,9 +43,17 @@
 }
 .glow-btn:hover{
     box-shadow:0 0 40px rgb(46, 175, 46);
-    transform: scale(1.2);
-    transform: translate(1px,-1px);
+    transform: scale(1.2) translate(1px,-1px);
 }
 .glow-btn:active{
     transform: scale(0.9);
+}
+@media (max-width:768px){
+    .card{
+        padding:30px;
+        width: 90%;
+    }
+    .card h1{
+        font-size:2rem;
+    }
 }
