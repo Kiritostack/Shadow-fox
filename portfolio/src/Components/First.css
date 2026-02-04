@@ -1,0 +1,50 @@
+.Container{
+    height:100vh;
+    padding-top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+    padding:60px;
+    border-radius:25px;
+    background:rgba(27, 25, 25, 0.779);
+    backdrop-filter:blur(12px);
+    text-align: center;
+    box-shadow:0 0 50px rgba(4, 153, 24, 0.685);
+    transition:0.4s;
+}
+.card:hover{
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg) scale(1.05);
+}
+.card h1{
+    font-size:3rem;
+}
+.card span{
+    color:rgb(20, 165, 20);
+}
+.card p{
+    padding: 20px;
+    font-size:1.3rem;
+    opacity:0.8;
+}
+.glow-btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding:15px 15px;
+    text-decoration: none;
+    background-color: rgb(20, 165, 20);
+    color: white;
+    font-weight:bold;
+    border-radius:10px;
+    transition:0.3s;
+}
+.glow-btn:hover{
+    box-shadow:0 0 40px rgb(46, 175, 46);
+    transform: scale(1.2);
+    transform: translate(1px,-1px);
+}
+.glow-btn:active{
+    transform: scale(0.9);
+}

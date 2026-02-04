@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+*{
+  margin:0px;
+  padding:0px;
+  font-family:'Orbitron',sans-serif;
+}
+body{
+  background:radial-gradient(circle,#095013,black);
+  color:white;
+  overflow-x:hidden;
+}
+.Light{
+   background:radial-gradient(circle,#178c26,black);
+  color: white;
+}
+.Dark{
+   background:radial-gradient(circle,#7ab381,rgb(255, 255, 255));
+  color:rgb(26, 158, 59);
+}
+html{
+  scroll-behavior: smooth;
+}
