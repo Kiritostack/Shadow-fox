@@ -1,9 +1,10 @@
-export default function ProductCard(){
+import './ProductCard.css'
+export default function ProductCard({image , name, price}){
     return(
         <div className="card">
-            <img href="/hoodie.png" alt="product"/>
-            <h3>Hoodie</h3>
-            <p>₹22,056</p>
+            <img src={image} alt={name}/>
+            <h3>{name}</h3>
+            <p>₹{price}</p>
             <button>Add to Cart</button>
         </div>
     )
