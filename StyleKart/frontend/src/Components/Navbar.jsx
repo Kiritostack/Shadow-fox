@@ -1,6 +1,6 @@
 import './Navbar.css'
-function Navbar(){
-<nav>
+export default function Navbar(){
+ return(<nav>
     <h2>Velouré</h2>
     <div>
         <a href="#">Men</a>
@@ -12,5 +12,5 @@ function Navbar(){
         <button>Login</button>
     </div>
 </nav>
+ );
 }
-export default Navbar;
