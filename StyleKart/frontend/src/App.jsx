@@ -1,10 +1,10 @@
-import Banner from "./Components/Banner";
+import Banneer from "./Components/Banneer";
 import Navbar from "./Components/Navbar";
 function app(){
 return (
   <div>
     <Navbar/>
-    <Banner/>
+    <Banneer/>
   <h1>Velouré</h1>
 <p>Premiun Streetwear</p>
   </div>
