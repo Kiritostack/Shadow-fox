@@ -1,7 +1,11 @@
+import Navbar from "./Components/Navbar";
 function app(){
 return (
-<h1>Velouré</h1>
-
-)
+  <div>
+    <Navbar/>
+  <h1>Velouré</h1>
+<p>Premiun Streetwear</p>
+  </div>
+);
 }
 export default app;
