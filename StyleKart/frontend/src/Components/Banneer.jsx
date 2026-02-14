@@ -3,7 +3,7 @@ export default function banner(){
     return(
         <section className="hero">
             <h1>Velouré</h1>
-            <p>Define Your Street</p>
+            <p>Définissez votre style</p>
             <button>Shop Now</button>
         </section>
     );

@@ -1,0 +1,5 @@
+.Product{
+   display:"flex";
+    gap:"20px";
+    padding:40px;
+}

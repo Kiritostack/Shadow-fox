@@ -6,6 +6,7 @@ nav{
     color: white;
     padding: 15px 40px;
     position:sticky;
+    border-radius:30px;
     top: 0;
 }
 nav h2{
@@ -25,4 +26,5 @@ nav button{
     cursor: pointer;
     color: #000000;
     border-radius: 4px;
+    font-weight: bold;
 }
