@@ -4,4 +4,10 @@
     padding:40px;
     flex-wrap: wrap;
     justify-content: center;
+    
+}
+*{
+    background:#111111;
+    overflow-x: hidden;
+     color: rgba(240, 248, 255, 0.763);
 }
