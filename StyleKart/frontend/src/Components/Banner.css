@@ -27,4 +27,11 @@
     cursor: pointer;
     font-weight: bold;
     border-radius: 4px;
+    transition: 0.3s;
+}
+.hero button:hover{
+  transform: translate(1px, -1px);
+}
+.hero button:active{
+    transform: scale(0.6);
 }

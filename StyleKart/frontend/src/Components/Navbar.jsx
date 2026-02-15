@@ -12,7 +12,8 @@ const { cart } = useContext(CartContext);
     <>
  <nav>
 
-   <h2>Velouré</h2>
+   <Link to="/" className="logo">Velouré</Link>
+
 
     
     <div className={`links ${open ? "show" : ""}`}>

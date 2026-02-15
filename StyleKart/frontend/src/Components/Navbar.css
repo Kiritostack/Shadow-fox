@@ -4,21 +4,35 @@ nav{
     align-items:center;
     background:#000;
     color:white;
-    padding:3px 22px;
+    padding:14px 22px;
     position:sticky;
     top:0;
     border-radius:30px;
     overflow-x: hidden;
+}
+.logo{
+    color:rgba(255, 255, 255, 0.788);
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
 }
 
 .links{
     display:flex;
     gap:20px;
 }
+.links a:hover{
+    opacity:0.5;
+    transform: translate(1px,-1px);
+}
 
 .links a{
     color:rgba(240,248,255,.7);
     text-decoration:none;
+    transition: 0.3s;
+}
+.links a:active{
+    transform: scale(1.2);
 }
 
 .actions button{
@@ -29,6 +43,13 @@ nav{
     color:rgb(36, 34, 34);
     border-radius:4px;
     font-weight:bold;
+    transition: 0.3s;
+}
+.actions button:hover{
+    transform: translate(1px,-1px);
+}
+.actions button:active{
+    transform: scale(0.6);
 }
 
 

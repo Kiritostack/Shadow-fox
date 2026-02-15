@@ -25,5 +25,12 @@ category:"Men"
     price:15000,
     image:"/Jackets.png",
     category:"Men"
+},
+{
+    id:5,
+    name:"Cap",
+    price:8000,
+    image:"/Cap.png",
+    category:"kids"
 }]
 export default products;
