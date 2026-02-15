@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   gap: 6px;
+  overflow-x: hidden;
 }
 .hero h1{
     font-size: 80px;

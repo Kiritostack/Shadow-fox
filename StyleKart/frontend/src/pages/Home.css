@@ -34,23 +34,4 @@
         transform: translateX( calc(-100%));
     }
 }
-.brand-center {
-  width: 100%;
-  display: grid;
-  place-items: center;   
-  margin: 80px 0;
-  text-align: center;
-  color: white;
-}
 
-.brand-center h1 {
-  font-size: 52px;
-  letter-spacing: 4px;
-  margin: 0;
-}
-
-.brand-center p {
-  margin-top: 10px;
-  font-size: 18px;
-  opacity: 0.8;
-}

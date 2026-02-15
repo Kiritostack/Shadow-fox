@@ -8,7 +8,7 @@ nav{
     position:sticky;
     top:0;
     border-radius:30px;
-    
+    overflow-x: hidden;
 }
 
 .links{
@@ -46,42 +46,90 @@ nav{
 }
 
 
-@media(max-width:768px){
+@media (max-width:768px){
 
     nav{
         padding:8px 16px;
         border-radius:20px;
-        position:static;
-
+        position:relative;   
+        overflow:visible;
     }
 
    
     .hamburger{
         display:flex;
+        z-index:1001;
     }
 
-   
+    
     .links{
         position:absolute;
-        top:70px;
-        left:10px;
-        right:20px;
-        width:calc(96%);
-        
+        top:60px;
+        left:0;
+        width:100%;          
         background:black;
         flex-direction:column;
         align-items:center;
-        padding:20px 3px;
-        transform:translateX(150%);
-        transition:.35s ease;
+        padding:20px 0;
+        gap:18px;
+
+    
+        transform:translateY(-120%);
+        opacity:0;
+        pointer-events:none;
+        transition:0.3s ease;
     }
 
+   
     .links.show{
         transform:translateY(0);
+        opacity:1;
+        pointer-events:auto;
     }
 
     
     .actions{
         display:none;
+    }
+}
+.mobile-cart-btn{
+    display:none;
+}
+
+
+@media(max-width:768px){
+
+    .mobile-cart-btn{
+        position:fixed;
+        bottom:18px;
+        right:18px;
+        background:black;
+        color:white;
+        width:55px;
+        height:55px;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:22px;
+        text-decoration:none;
+        z-index:2000;
+        box-shadow:0 6px 18px rgba(0,0,0,.35);
+    }
+
+    .cart-count{
+        position:absolute;
+        top:-5px;
+        right:-5px;
+        background:rgb(0, 0, 0);
+        color:white;
+        font-size:12px;
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
     }
 }

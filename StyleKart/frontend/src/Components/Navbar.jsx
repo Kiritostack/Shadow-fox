@@ -1,25 +1,30 @@
 import { useState } from "react";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 import './Navbar.css'
-
+import { CartContext } from "../context/CartContext";
 export default function Navbar(){
 
  const [open,setOpen] = useState(false);
+const { cart } = useContext(CartContext);
 
  return(
+    <>
  <nav>
 
-    <h2>Velouré</h2>
+   <h2>Velouré</h2>
 
     
     <div className={`links ${open ? "show" : ""}`}>
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Kids</a>
+        <Link to="/men">Men</Link>
+        <Link to="/women">Women</Link>
+        <Link to="/kids">Kids</Link>
     </div>
 
    
     <div className="actions">
-        <button>Cart</button>
+          
+<Link to="/cart"><button>Cart ({cart.length})</button></Link>
         <button>Login</button>
     </div>
 
@@ -33,5 +38,10 @@ export default function Navbar(){
     </div>
 
 </nav>
+ <Link to="/cart" className="mobile-cart-btn">
+  🛒
+  <span className="cart-count">{cart.length}</span>
+</Link>
+             </>
  );
 }

@@ -1,30 +1,27 @@
-import Banneer from "./Components/Banneer";
 import Navbar from "./Components/Navbar";
-import ProductCard from "./Components/ProductCard";
-import products from "./data/products";
-import "./App.css";
-function app(){
-return (
-  <div>
-    <Navbar/>
-    <Banneer/>
-    <div className="slider">
- <div className="track">
-    <div className="products">
-      {[...products, ...products].map((item, i) => (
-        <ProductCard
-          key={i}
-          name={item.name}
-          price={item.price}
-          image={item.image}
-        />
-      ))}
-    </div>
-        </div>
-      </div>
-  <h1>Velouré</h1>
-<p>Premiun Streetwear</p>
-  </div>
-);
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Men from "./pages/Men";
+import Women from "./pages/Women";
+import Kids from "./pages/Kids";
+import Product from "./pages/Product";
+import Cart from "./pages/Cart";
+import './App.css'
+function App() {
+  return (
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/kids" element={<Kids />} />
+        <Route path="/product/:id" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </>
+  );
 }
-export default app;
+
+export default App;

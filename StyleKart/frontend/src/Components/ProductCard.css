@@ -1,4 +1,6 @@
 .card{
+    text-decoration:none;
+    color: inherit;
     width:220px;
     background: #181818;
     color: white;
@@ -7,6 +9,14 @@
     text-align: center;
     flex:0 0 auto;
 }
+.cards{
+    text-decoration: none;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
 .card img{
     width:100%;
     border-radius: 6px;

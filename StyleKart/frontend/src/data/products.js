@@ -3,22 +3,27 @@ const products =[
 id:1,
 name:"Hoodie",
 price:22056 ,
-image:"/hoodie.png"
+image:"/hoodie.png",
+category:"Men"
 }
 ,{
     id:2,
     name:"Cargo pants",
     price:20000,
-    image:"/Pants.png"},
+    image:"/Pants.png",
+category:"Men"
+},
 {
     id:3,
     name:"T-Shirt",
     price:10000,
-    image:"/T-shirt.png"
+    image:"/T-shirt.png",
+    category:"Women"
 },{
     id:4,
     name:"Jacket",
     price:15000,
-    image:"/Jackets.png"
+    image:"/Jackets.png",
+    category:"Men"
 }]
 export default products;
