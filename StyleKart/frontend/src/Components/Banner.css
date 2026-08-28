@@ -1,0 +1,37 @@
+.hero{
+    height:100vh;
+    background:#11111141;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  overflow-x: hidden;
+}
+.hero h1{
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+.hero p{
+    font-size: 20px;
+    opacity:0.6;
+    color: aliceblue;
+    
+}
+.hero button{
+    padding: 12px 28px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.hero button:hover{
+  transform: translate(1px, -1px);
+}
+.hero button:active{
+    transform: scale(0.6);
+}

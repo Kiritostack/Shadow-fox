@@ -1,0 +1,56 @@
+.products{
+   display:flex;
+    gap:30px;
+    padding:40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+*{
+    background:#111111;
+    overflow-x: hidden;
+    color: rgba(240, 248, 255, 0.763);
+}
+.slider{
+    overflow: hidden;
+    width:100%;
+    padding: 80px 0;
+    position: relative;
+}
+.track{
+    display: flex;
+    gap:28px;
+    width:max-content;
+    animation: scroll 120s linear infinite;
+}
+.slider:hover .track{
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX( calc(-100%));
+    }
+}
+.brand-center {
+  width: 100%;
+  display: grid;
+  place-items: center;   
+  margin: 80px 0;
+  text-align: center;
+  color: white;
+}
+
+.brand-center h1 {
+  font-size: 52px;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.brand-center p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.8;
+}
